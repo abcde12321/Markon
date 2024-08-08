@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		31985C902C64B5E300C3273C /* MarkonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31985C8F2C64B5E300C3273C /* MarkonApp.swift */; };
+		31985C922C64B5E300C3273C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31985C912C64B5E300C3273C /* ContentView.swift */; };
+		31985C942C64B5E400C3273C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31985C932C64B5E400C3273C /* Assets.xcassets */; };
+		31985C972C64B5E400C3273C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31985C962C64B5E400C3273C /* Preview Assets.xcassets */; };
+		31985CA22C64B5E400C3273C /* MarkonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31985CA12C64B5E400C3273C /* MarkonTests.swift */; };
+		31985CAC2C64B5E400C3273C /* MarkonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31985CAB2C64B5E400C3273C /* MarkonUITests.swift */; };
+		31985CAE2C64B5E400C3273C /* MarkonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31985CAD2C64B5E400C3273C /* MarkonUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		31985C9E2C64B5E400C3273C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31985C842C64B5E300C3273C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31985C8B2C64B5E300C3273C;
+			remoteInfo = Markon;
+		};
+		31985CA82C64B5E400C3273C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31985C842C64B5E300C3273C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31985C8B2C64B5E300C3273C;
+			remoteInfo = Markon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		31985C8C2C64B5E300C3273C /* Markon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Markon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		31985C8F2C64B5E300C3273C /* MarkonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkonApp.swift; sourceTree = "<group>"; };
+		31985C912C64B5E300C3273C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		31985C932C64B5E400C3273C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		31985C962C64B5E400C3273C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		31985C982C64B5E400C3273C /* Markon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Markon.entitlements; sourceTree = "<group>"; };
+		31985C9D2C64B5E400C3273C /* MarkonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarkonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		31985CA12C64B5E400C3273C /* MarkonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkonTests.swift; sourceTree = "<group>"; };
+		31985CA72C64B5E400C3273C /* MarkonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarkonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		31985CAB2C64B5E400C3273C /* MarkonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkonUITests.swift; sourceTree = "<group>"; };
+		31985CAD2C64B5E400C3273C /* MarkonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkonUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		31985C892C64B5E300C3273C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31985C9A2C64B5E400C3273C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31985CA42C64B5E400C3273C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		31985C832C64B5E300C3273C = {
+			isa = PBXGroup;
+			children = (
+				31985C8E2C64B5E300C3273C /* Markon */,
+				31985CA02C64B5E400C3273C /* MarkonTests */,
+				31985CAA2C64B5E400C3273C /* MarkonUITests */,
+				31985C8D2C64B5E300C3273C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		31985C8D2C64B5E300C3273C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				31985C8C2C64B5E300C3273C /* Markon.app */,
+				31985C9D2C64B5E400C3273C /* MarkonTests.xctest */,
+				31985CA72C64B5E400C3273C /* MarkonUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		31985C8E2C64B5E300C3273C /* Markon */ = {
+			isa = PBXGroup;
+			children = (
+				31985C8F2C64B5E300C3273C /* MarkonApp.swift */,
+				31985C912C64B5E300C3273C /* ContentView.swift */,
+				31985C932C64B5E400C3273C /* Assets.xcassets */,
+				31985C982C64B5E400C3273C /* Markon.entitlements */,
+				31985C952C64B5E400C3273C /* Preview Content */,
+			);
+			path = Markon;
+			sourceTree = "<group>";
+		};
+		31985C952C64B5E400C3273C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				31985C962C64B5E400C3273C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		31985CA02C64B5E400C3273C /* MarkonTests */ = {
+			isa = PBXGroup;
+			children = (
+				31985CA12C64B5E400C3273C /* MarkonTests.swift */,
+			);
+			path = MarkonTests;
+			sourceTree = "<group>";
+		};
+		31985CAA2C64B5E400C3273C /* MarkonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				31985CAB2C64B5E400C3273C /* MarkonUITests.swift */,
+				31985CAD2C64B5E400C3273C /* MarkonUITestsLaunchTests.swift */,
+			);
+			path = MarkonUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		31985C8B2C64B5E300C3273C /* Markon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31985CB12C64B5E400C3273C /* Build configuration list for PBXNativeTarget "Markon" */;
+			buildPhases = (
+				31985C882C64B5E300C3273C /* Sources */,
+				31985C892C64B5E300C3273C /* Frameworks */,
+				31985C8A2C64B5E300C3273C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Markon;
+			productName = Markon;
+			productReference = 31985C8C2C64B5E300C3273C /* Markon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		31985C9C2C64B5E400C3273C /* MarkonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31985CB42C64B5E400C3273C /* Build configuration list for PBXNativeTarget "MarkonTests" */;
+			buildPhases = (
+				31985C992C64B5E400C3273C /* Sources */,
+				31985C9A2C64B5E400C3273C /* Frameworks */,
+				31985C9B2C64B5E400C3273C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				31985C9F2C64B5E400C3273C /* PBXTargetDependency */,
+			);
+			name = MarkonTests;
+			productName = MarkonTests;
+			productReference = 31985C9D2C64B5E400C3273C /* MarkonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		31985CA62C64B5E400C3273C /* MarkonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31985CB72C64B5E400C3273C /* Build configuration list for PBXNativeTarget "MarkonUITests" */;
+			buildPhases = (
+				31985CA32C64B5E400C3273C /* Sources */,
+				31985CA42C64B5E400C3273C /* Frameworks */,
+				31985CA52C64B5E400C3273C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				31985CA92C64B5E400C3273C /* PBXTargetDependency */,
+			);
+			name = MarkonUITests;
+			productName = MarkonUITests;
+			productReference = 31985CA72C64B5E400C3273C /* MarkonUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		31985C842C64B5E300C3273C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					31985C8B2C64B5E300C3273C = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					31985C9C2C64B5E400C3273C = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 31985C8B2C64B5E300C3273C;
+					};
+					31985CA62C64B5E400C3273C = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 31985C8B2C64B5E300C3273C;
+					};
+				};
+			};
+			buildConfigurationList = 31985C872C64B5E300C3273C /* Build configuration list for PBXProject "Markon" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 31985C832C64B5E300C3273C;
+			productRefGroup = 31985C8D2C64B5E300C3273C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				31985C8B2C64B5E300C3273C /* Markon */,
+				31985C9C2C64B5E400C3273C /* MarkonTests */,
+				31985CA62C64B5E400C3273C /* MarkonUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		31985C8A2C64B5E300C3273C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31985C972C64B5E400C3273C /* Preview Assets.xcassets in Resources */,
+				31985C942C64B5E400C3273C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31985C9B2C64B5E400C3273C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31985CA52C64B5E400C3273C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		31985C882C64B5E300C3273C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31985C922C64B5E300C3273C /* ContentView.swift in Sources */,
+				31985C902C64B5E300C3273C /* MarkonApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31985C992C64B5E400C3273C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31985CA22C64B5E400C3273C /* MarkonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31985CA32C64B5E400C3273C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31985CAE2C64B5E400C3273C /* MarkonUITestsLaunchTests.swift in Sources */,
+				31985CAC2C64B5E400C3273C /* MarkonUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		31985C9F2C64B5E400C3273C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 31985C8B2C64B5E300C3273C /* Markon */;
+			targetProxy = 31985C9E2C64B5E400C3273C /* PBXContainerItemProxy */;
+		};
+		31985CA92C64B5E400C3273C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 31985C8B2C64B5E300C3273C /* Markon */;
+			targetProxy = 31985CA82C64B5E400C3273C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		31985CAF2C64B5E400C3273C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		31985CB02C64B5E400C3273C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		31985CB22C64B5E400C3273C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Markon/Markon.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Markon/Preview Content\"";
+				DEVELOPMENT_TEAM = 4U68PU9223;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Fan.Markon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		31985CB32C64B5E400C3273C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Markon/Markon.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Markon/Preview Content\"";
+				DEVELOPMENT_TEAM = 4U68PU9223;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Fan.Markon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		31985CB52C64B5E400C3273C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4U68PU9223;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Fan.MarkonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Markon.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Markon";
+			};
+			name = Debug;
+		};
+		31985CB62C64B5E400C3273C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4U68PU9223;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Fan.MarkonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Markon.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Markon";
+			};
+			name = Release;
+		};
+		31985CB82C64B5E400C3273C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4U68PU9223;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Fan.MarkonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Markon;
+			};
+			name = Debug;
+		};
+		31985CB92C64B5E400C3273C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4U68PU9223;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Fan.MarkonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Markon;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		31985C872C64B5E300C3273C /* Build configuration list for PBXProject "Markon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31985CAF2C64B5E400C3273C /* Debug */,
+				31985CB02C64B5E400C3273C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31985CB12C64B5E400C3273C /* Build configuration list for PBXNativeTarget "Markon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31985CB22C64B5E400C3273C /* Debug */,
+				31985CB32C64B5E400C3273C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31985CB42C64B5E400C3273C /* Build configuration list for PBXNativeTarget "MarkonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31985CB52C64B5E400C3273C /* Debug */,
+				31985CB62C64B5E400C3273C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31985CB72C64B5E400C3273C /* Build configuration list for PBXNativeTarget "MarkonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31985CB82C64B5E400C3273C /* Debug */,
+				31985CB92C64B5E400C3273C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 31985C842C64B5E300C3273C /* Project object */;
+}
