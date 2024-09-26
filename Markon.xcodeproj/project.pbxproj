@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3193C7462C8AFBF70018948F /* PhotoEditingPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31985CD32C654FD400C3273C /* PhotoEditingPreview.swift */; };
+		3193C7472C8AFC1C0018948F /* ProcessedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31544F9A2C73D2C5006FADF5 /* ProcessedImageView.swift */; };
+		3193C7482C8AFC260018948F /* ProcessedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31544F9A2C73D2C5006FADF5 /* ProcessedImageView.swift */; };
+		3193C7492C8AFC430018948F /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31985CD52C65551E00C3273C /* Filter.swift */; };
+		3193C74A2C8AFC690018948F /* PhotoEditingPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31985CD32C654FD400C3273C /* PhotoEditingPreview.swift */; };
+		3193C8282C8E2ACB0018948F /* GPUImageEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3193C8272C8E2ACB0018948F /* GPUImageEffect.swift */; };
+		3193C8292C8E2C220018948F /* GPUImageEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3193C8272C8E2ACB0018948F /* GPUImageEffect.swift */; };
+		3193C8312C8F08920018948F /* GPUImage in Frameworks */ = {isa = PBXBuildFile; productRef = 3193C8302C8F08920018948F /* GPUImage */; };
+		3193C8332C8F08A70018948F /* GPUImage in Frameworks */ = {isa = PBXBuildFile; productRef = 3193C8322C8F08A70018948F /* GPUImage */; };
+		3193C8352C8F36260018948F /* GPUImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3193C8342C8F36260018948F /* GPUImageProcessor.swift */; };
+		3193C8362C8F37180018948F /* GPUImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3193C8342C8F36260018948F /* GPUImageProcessor.swift */; };
 		31985C902C64B5E300C3273C /* MarkonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31985C8F2C64B5E300C3273C /* MarkonApp.swift */; };
 		31985C922C64B5E300C3273C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31985C912C64B5E300C3273C /* ContentView.swift */; };
 		31985C942C64B5E400C3273C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31985C932C64B5E400C3273C /* Assets.xcassets */; };
@@ -14,6 +25,15 @@
 		31985CA22C64B5E400C3273C /* MarkonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31985CA12C64B5E400C3273C /* MarkonTests.swift */; };
 		31985CAC2C64B5E400C3273C /* MarkonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31985CAB2C64B5E400C3273C /* MarkonUITests.swift */; };
 		31985CAE2C64B5E400C3273C /* MarkonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31985CAD2C64B5E400C3273C /* MarkonUITestsLaunchTests.swift */; };
+		31985CC12C64F74F00C3273C /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31985CC02C64F74F00C3273C /* PhotosUI.framework */; };
+		31985CC32C64F74F00C3273C /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31985CC22C64F74F00C3273C /* Photos.framework */; };
+		31985CC62C64F74F00C3273C /* PhotoEditingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31985CC52C64F74F00C3273C /* PhotoEditingViewController.swift */; };
+		31985CCE2C64F74F00C3273C /* MarkonExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 31985CBE2C64F74F00C3273C /* MarkonExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		31985CD62C65551E00C3273C /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31985CD52C65551E00C3273C /* Filter.swift */; };
+		31AEFB4F2C9C66F800538B21 /* ImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AEFB4E2C9C66F400538B21 /* ImageExtensions.swift */; };
+		31AEFB502C9C66F800538B21 /* ImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AEFB4E2C9C66F400538B21 /* ImageExtensions.swift */; };
+		31D1D2232C94C28D0083732D /* MarkonEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D1D2222C94C28D0083732D /* MarkonEffect.swift */; };
+		31D1D2242C94C2B10083732D /* MarkonEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D1D2222C94C28D0083732D /* MarkonEffect.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,9 +51,33 @@
 			remoteGlobalIDString = 31985C8B2C64B5E300C3273C;
 			remoteInfo = Markon;
 		};
+		31985CCC2C64F74F00C3273C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31985C842C64B5E300C3273C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31985CBD2C64F74F00C3273C;
+			remoteInfo = MarkonExtension;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		31985CD22C64F74F00C3273C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				31985CCE2C64F74F00C3273C /* MarkonExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		31544F9A2C73D2C5006FADF5 /* ProcessedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessedImageView.swift; sourceTree = "<group>"; };
+		3193C8272C8E2ACB0018948F /* GPUImageEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPUImageEffect.swift; sourceTree = "<group>"; };
+		3193C8342C8F36260018948F /* GPUImageProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPUImageProcessor.swift; sourceTree = "<group>"; };
 		31985C8C2C64B5E300C3273C /* Markon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Markon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31985C8F2C64B5E300C3273C /* MarkonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkonApp.swift; sourceTree = "<group>"; };
 		31985C912C64B5E300C3273C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +89,17 @@
 		31985CA72C64B5E400C3273C /* MarkonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarkonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		31985CAB2C64B5E400C3273C /* MarkonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkonUITests.swift; sourceTree = "<group>"; };
 		31985CAD2C64B5E400C3273C /* MarkonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkonUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		31985CBE2C64F74F00C3273C /* MarkonExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MarkonExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		31985CC02C64F74F00C3273C /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
+		31985CC22C64F74F00C3273C /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		31985CC52C64F74F00C3273C /* PhotoEditingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEditingViewController.swift; sourceTree = "<group>"; };
+		31985CCA2C64F74F00C3273C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31985CCB2C64F74F00C3273C /* MarkonExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MarkonExtension.entitlements; sourceTree = "<group>"; };
+		31985CD32C654FD400C3273C /* PhotoEditingPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEditingPreview.swift; sourceTree = "<group>"; };
+		31985CD52C65551E00C3273C /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		31985CD72C65FF7400C3273C /* FilterPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FilterPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		31AEFB4E2C9C66F400538B21 /* ImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtensions.swift; sourceTree = "<group>"; };
+		31D1D2222C94C28D0083732D /* MarkonEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkonEffect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3193C8312C8F08920018948F /* GPUImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +125,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		31985CBB2C64F74F00C3273C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31985CC12C64F74F00C3273C /* PhotosUI.framework in Frameworks */,
+				3193C8332C8F08A70018948F /* GPUImage in Frameworks */,
+				31985CC32C64F74F00C3273C /* Photos.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +144,8 @@
 				31985C8E2C64B5E300C3273C /* Markon */,
 				31985CA02C64B5E400C3273C /* MarkonTests */,
 				31985CAA2C64B5E400C3273C /* MarkonUITests */,
+				31985CC42C64F74F00C3273C /* MarkonExtension */,
+				31985CBF2C64F74F00C3273C /* Frameworks */,
 				31985C8D2C64B5E300C3273C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +156,7 @@
 				31985C8C2C64B5E300C3273C /* Markon.app */,
 				31985C9D2C64B5E400C3273C /* MarkonTests.xctest */,
 				31985CA72C64B5E400C3273C /* MarkonUITests.xctest */,
+				31985CBE2C64F74F00C3273C /* MarkonExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,9 +166,17 @@
 			children = (
 				31985C8F2C64B5E300C3273C /* MarkonApp.swift */,
 				31985C912C64B5E300C3273C /* ContentView.swift */,
+				31985CD32C654FD400C3273C /* PhotoEditingPreview.swift */,
+				31544F9A2C73D2C5006FADF5 /* ProcessedImageView.swift */,
+				3193C8272C8E2ACB0018948F /* GPUImageEffect.swift */,
+				3193C8342C8F36260018948F /* GPUImageProcessor.swift */,
+				31D1D2222C94C28D0083732D /* MarkonEffect.swift */,
+				31985CD52C65551E00C3273C /* Filter.swift */,
+				31AEFB4E2C9C66F400538B21 /* ImageExtensions.swift */,
 				31985C932C64B5E400C3273C /* Assets.xcassets */,
 				31985C982C64B5E400C3273C /* Markon.entitlements */,
 				31985C952C64B5E400C3273C /* Preview Content */,
+				31985CD72C65FF7400C3273C /* FilterPlayground.playground */,
 			);
 			path = Markon;
 			sourceTree = "<group>";
@@ -129,6 +206,25 @@
 			path = MarkonUITests;
 			sourceTree = "<group>";
 		};
+		31985CBF2C64F74F00C3273C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31985CC02C64F74F00C3273C /* PhotosUI.framework */,
+				31985CC22C64F74F00C3273C /* Photos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		31985CC42C64F74F00C3273C /* MarkonExtension */ = {
+			isa = PBXGroup;
+			children = (
+				31985CC52C64F74F00C3273C /* PhotoEditingViewController.swift */,
+				31985CCA2C64F74F00C3273C /* Info.plist */,
+				31985CCB2C64F74F00C3273C /* MarkonExtension.entitlements */,
+			);
+			path = MarkonExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,12 +235,17 @@
 				31985C882C64B5E300C3273C /* Sources */,
 				31985C892C64B5E300C3273C /* Frameworks */,
 				31985C8A2C64B5E300C3273C /* Resources */,
+				31985CD22C64F74F00C3273C /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				31985CCD2C64F74F00C3273C /* PBXTargetDependency */,
 			);
 			name = Markon;
+			packageProductDependencies = (
+				3193C8302C8F08920018948F /* GPUImage */,
+			);
 			productName = Markon;
 			productReference = 31985C8C2C64B5E300C3273C /* Markon.app */;
 			productType = "com.apple.product-type.application";
@@ -185,6 +286,26 @@
 			productReference = 31985CA72C64B5E400C3273C /* MarkonUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		31985CBD2C64F74F00C3273C /* MarkonExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31985CCF2C64F74F00C3273C /* Build configuration list for PBXNativeTarget "MarkonExtension" */;
+			buildPhases = (
+				31985CBA2C64F74F00C3273C /* Sources */,
+				31985CBB2C64F74F00C3273C /* Frameworks */,
+				31985CBC2C64F74F00C3273C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MarkonExtension;
+			packageProductDependencies = (
+				3193C8322C8F08A70018948F /* GPUImage */,
+			);
+			productName = MarkonExtension;
+			productReference = 31985CBE2C64F74F00C3273C /* MarkonExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -206,6 +327,9 @@
 						CreatedOnToolsVersion = 15.4;
 						TestTargetID = 31985C8B2C64B5E300C3273C;
 					};
+					31985CBD2C64F74F00C3273C = {
+						CreatedOnToolsVersion = 15.4;
+					};
 				};
 			};
 			buildConfigurationList = 31985C872C64B5E300C3273C /* Build configuration list for PBXProject "Markon" */;
@@ -217,6 +341,9 @@
 				Base,
 			);
 			mainGroup = 31985C832C64B5E300C3273C;
+			packageReferences = (
+				3193C82F2C8F08920018948F /* XCRemoteSwiftPackageReference "GPUImage3" */,
+			);
 			productRefGroup = 31985C8D2C64B5E300C3273C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -224,6 +351,7 @@
 				31985C8B2C64B5E300C3273C /* Markon */,
 				31985C9C2C64B5E400C3273C /* MarkonTests */,
 				31985CA62C64B5E400C3273C /* MarkonUITests */,
+				31985CBD2C64F74F00C3273C /* MarkonExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -252,6 +380,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		31985CBC2C64F74F00C3273C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -260,6 +395,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				31985C922C64B5E300C3273C /* ContentView.swift in Sources */,
+				3193C8352C8F36260018948F /* GPUImageProcessor.swift in Sources */,
+				31D1D2232C94C28D0083732D /* MarkonEffect.swift in Sources */,
+				31AEFB502C9C66F800538B21 /* ImageExtensions.swift in Sources */,
+				3193C7492C8AFC430018948F /* Filter.swift in Sources */,
+				3193C7472C8AFC1C0018948F /* ProcessedImageView.swift in Sources */,
+				3193C8282C8E2ACB0018948F /* GPUImageEffect.swift in Sources */,
+				3193C7462C8AFBF70018948F /* PhotoEditingPreview.swift in Sources */,
 				31985C902C64B5E300C3273C /* MarkonApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,6 +423,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		31985CBA2C64F74F00C3273C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3193C8292C8E2C220018948F /* GPUImageEffect.swift in Sources */,
+				3193C8362C8F37180018948F /* GPUImageProcessor.swift in Sources */,
+				31AEFB4F2C9C66F800538B21 /* ImageExtensions.swift in Sources */,
+				3193C74A2C8AFC690018948F /* PhotoEditingPreview.swift in Sources */,
+				31D1D2242C94C2B10083732D /* MarkonEffect.swift in Sources */,
+				3193C7482C8AFC260018948F /* ProcessedImageView.swift in Sources */,
+				31985CD62C65551E00C3273C /* Filter.swift in Sources */,
+				31985CC62C64F74F00C3273C /* PhotoEditingViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -293,6 +450,11 @@
 			isa = PBXTargetDependency;
 			target = 31985C8B2C64B5E300C3273C /* Markon */;
 			targetProxy = 31985CA82C64B5E400C3273C /* PBXContainerItemProxy */;
+		};
+		31985CCD2C64F74F00C3273C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 31985CBD2C64F74F00C3273C /* MarkonExtension */;
+			targetProxy = 31985CCC2C64F74F00C3273C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -418,6 +580,7 @@
 		31985CB22C64B5E400C3273C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Markon/Markon.entitlements;
@@ -429,7 +592,9 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -437,14 +602,18 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Fan.Markon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		31985CB32C64B5E400C3273C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Markon/Markon.entitlements;
@@ -456,7 +625,9 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -464,8 +635,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Fan.Markon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -541,6 +715,66 @@
 			};
 			name = Release;
 		};
+		31985CD02C64F74F00C3273C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MarkonExtension/MarkonExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4U68PU9223;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MarkonExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Markon;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Fan.Markon.MarkonExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		31985CD12C64F74F00C3273C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MarkonExtension/MarkonExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4U68PU9223;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MarkonExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Markon;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Fan.Markon.MarkonExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -580,7 +814,40 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		31985CCF2C64F74F00C3273C /* Build configuration list for PBXNativeTarget "MarkonExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31985CD02C64F74F00C3273C /* Debug */,
+				31985CD12C64F74F00C3273C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3193C82F2C8F08920018948F /* XCRemoteSwiftPackageReference "GPUImage3" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/BradLarson/GPUImage3";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3193C8302C8F08920018948F /* GPUImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3193C82F2C8F08920018948F /* XCRemoteSwiftPackageReference "GPUImage3" */;
+			productName = GPUImage;
+		};
+		3193C8322C8F08A70018948F /* GPUImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3193C82F2C8F08920018948F /* XCRemoteSwiftPackageReference "GPUImage3" */;
+			productName = GPUImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 31985C842C64B5E300C3273C /* Project object */;
 }
