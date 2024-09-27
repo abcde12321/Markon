@@ -53,14 +53,14 @@ class PhotoEditingViewController: PlatformViewController, PHContentEditingContro
         
         if let displayImage = contentEditingInput.displaySizeImage  {
             print("startContentEditing: load displayImage")
-            GPUImageProcessor.shared.originalImage = displayImage
+            CIFilterProcessor.shared.originalImage = displayImage
         }else{
             print("startContentEditing: load full size Image")
             
             #if os(macOS)
             if let sourceImageURL = contentEditingInput.fullSizeImageURL,
                let image = NSImage(contentsOf: sourceImageURL) {
-                GPUImageProcessor.shared.originalImage = image
+                CIFilterProcessor.shared.originalImage = image
             } else {
                 print("startContentEditing: failed to load full size Image!")
             }
@@ -68,7 +68,7 @@ class PhotoEditingViewController: PlatformViewController, PHContentEditingContro
             if let sourceImageURL = contentEditingInput.fullSizeImageURL,
                let imageData = try? Data(contentsOf: sourceImageURL),
                let image = UIImage(data: imageData) {
-                GPUImageProcessor.shared.originalImage = image
+                CIFilterProcessor.shared.originalImage = image
             } else {
                 print("startContentEditing: failed to load full size Image!")
             }
@@ -89,7 +89,7 @@ class PhotoEditingViewController: PlatformViewController, PHContentEditingContro
     func finishContentEditing(completionHandler: @escaping ((PHContentEditingOutput?) -> Void)) {
         print("finishContentEditing")
         guard let input = self.input,
-              let editedImage = GPUImageProcessor.shared.processedImage else {
+              let editedImage = CIFilterProcessor.shared.processedImage else {
                   completionHandler(nil)
                   print("finishContentEditing failed, no processed image.")
                   return
@@ -131,7 +131,7 @@ class PhotoEditingViewController: PlatformViewController, PHContentEditingContro
         }
         #endif
         
-        GPUImageProcessor.shared.processedImage = nil
+        CIFilterProcessor.shared.processedImage = nil
     }
     
     var shouldShowCancelConfirmation: Bool {

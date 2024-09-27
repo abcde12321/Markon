@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreImage
 
 
 struct MarkonEffect: Identifiable, Hashable{
@@ -13,6 +14,7 @@ struct MarkonEffect: Identifiable, Hashable{
     let id: String
     let name: String
     var sliders: [SliderInfo]
+    let cifilterProvider: (MarkonEffect) -> CIFilter?
     
     var params: [Float] {
         return sliders.map { Float($0.value) }
@@ -28,6 +30,11 @@ struct MarkonEffect: Identifiable, Hashable{
     
     static func == (lhs: MarkonEffect, rhs: MarkonEffect) -> Bool {
         return lhs.id == rhs.id
+    }
+    
+    // Computed property to get the CIFilter using the provider
+    var cifilter: CIFilter? {
+        return cifilterProvider(self)
     }
 }
 

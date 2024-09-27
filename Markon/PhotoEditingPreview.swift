@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PhotoEditingPreview: View {
     
-    @StateObject var imageProcessor = GPUImageProcessor.shared
+    @StateObject var imageProcessor = CIFilterProcessor.shared
     
     var body: some View {
         VStack {
@@ -72,7 +72,7 @@ struct PhotoEditingPreview: View {
     var effectsSelectionView: some View{
         // Horizontal scroll of different color effect
         ScrollView(.horizontal, showsIndicators: true) {
-            HStack(spacing: 20) {
+            LazyHStack(spacing: 20) {
                 ForEach(imageProcessor.effectImages) { effectImage in
                     let isSelected = (effectImage.effect == imageProcessor.selectedEffect)
                     
@@ -80,18 +80,7 @@ struct PhotoEditingPreview: View {
                         .onTapGesture {
                             imageProcessor.selectedEffect = effectImage.effect
                         }
-                    
-//                    if let image = effectImage.image{
-//                        Image(nsImage: image)
-//                            .resizable()
-//                            .aspectRatio(contentMode: .fit)
-//                            .frame(width: 200, height: 200)
-//                            .onTapGesture {
-//                                imageProcessor.selectedEffect = effectImage.effect
-//                            }
-//                    }
                 }
-                
             }
             .frame(maxWidth: .infinity)  // Ensure HStack takes the entire available width
             .padding()
@@ -99,9 +88,6 @@ struct PhotoEditingPreview: View {
     }
 
 }
-
-//ingore the warning that nsimage is not sendable
-//extension NSImage: @unchecked Sendable {}
 
 //#Preview {
 //    PhotoEditingPreview(originalImage: NSImage(named: "ExampleOriginalImage")!,

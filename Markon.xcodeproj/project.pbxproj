@@ -28,6 +28,10 @@
 		31985CC32C64F74F00C3273C /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31985CC22C64F74F00C3273C /* Photos.framework */; };
 		31985CC62C64F74F00C3273C /* PhotoEditingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31985CC52C64F74F00C3273C /* PhotoEditingViewController.swift */; };
 		31985CCE2C64F74F00C3273C /* MarkonExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 31985CBE2C64F74F00C3273C /* MarkonExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		31A9AEA32CA698BD00C48BA4 /* CIFilterEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A9AEA22CA698B500C48BA4 /* CIFilterEffect.swift */; };
+		31A9AEA42CA698BD00C48BA4 /* CIFilterEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A9AEA22CA698B500C48BA4 /* CIFilterEffect.swift */; };
+		31A9AEA62CA699ED00C48BA4 /* CIFilterProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A9AEA52CA699ED00C48BA4 /* CIFilterProcessor.swift */; };
+		31A9AEA72CA699ED00C48BA4 /* CIFilterProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A9AEA52CA699ED00C48BA4 /* CIFilterProcessor.swift */; };
 		31AEFB4F2C9C66F800538B21 /* ImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AEFB4E2C9C66F400538B21 /* ImageExtensions.swift */; };
 		31AEFB502C9C66F800538B21 /* ImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AEFB4E2C9C66F400538B21 /* ImageExtensions.swift */; };
 		31D1D2232C94C28D0083732D /* MarkonEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D1D2222C94C28D0083732D /* MarkonEffect.swift */; };
@@ -95,6 +99,8 @@
 		31985CCB2C64F74F00C3273C /* MarkonExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MarkonExtension.entitlements; sourceTree = "<group>"; };
 		31985CD32C654FD400C3273C /* PhotoEditingPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEditingPreview.swift; sourceTree = "<group>"; };
 		31985CD72C65FF7400C3273C /* FilterPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FilterPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		31A9AEA22CA698B500C48BA4 /* CIFilterEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIFilterEffect.swift; sourceTree = "<group>"; };
+		31A9AEA52CA699ED00C48BA4 /* CIFilterProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIFilterProcessor.swift; sourceTree = "<group>"; };
 		31AEFB4E2C9C66F400538B21 /* ImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtensions.swift; sourceTree = "<group>"; };
 		31D1D2222C94C28D0083732D /* MarkonEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkonEffect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -165,10 +171,12 @@
 				31985C912C64B5E300C3273C /* ContentView.swift */,
 				31985CD32C654FD400C3273C /* PhotoEditingPreview.swift */,
 				31544F9A2C73D2C5006FADF5 /* ProcessedImageView.swift */,
-				3193C8272C8E2ACB0018948F /* GPUImageEffect.swift */,
-				3193C8342C8F36260018948F /* GPUImageProcessor.swift */,
 				31D1D2222C94C28D0083732D /* MarkonEffect.swift */,
+				31A9AEA22CA698B500C48BA4 /* CIFilterEffect.swift */,
+				31A9AEA52CA699ED00C48BA4 /* CIFilterProcessor.swift */,
 				31AEFB4E2C9C66F400538B21 /* ImageExtensions.swift */,
+				3193C8342C8F36260018948F /* GPUImageProcessor.swift */,
+				3193C8272C8E2ACB0018948F /* GPUImageEffect.swift */,
 				31985C932C64B5E400C3273C /* Assets.xcassets */,
 				31985C982C64B5E400C3273C /* Markon.entitlements */,
 				31985C952C64B5E400C3273C /* Preview Content */,
@@ -393,6 +401,8 @@
 				31985C922C64B5E300C3273C /* ContentView.swift in Sources */,
 				3193C8352C8F36260018948F /* GPUImageProcessor.swift in Sources */,
 				31D1D2232C94C28D0083732D /* MarkonEffect.swift in Sources */,
+				31A9AEA42CA698BD00C48BA4 /* CIFilterEffect.swift in Sources */,
+				31A9AEA72CA699ED00C48BA4 /* CIFilterProcessor.swift in Sources */,
 				31AEFB502C9C66F800538B21 /* ImageExtensions.swift in Sources */,
 				3193C7472C8AFC1C0018948F /* ProcessedImageView.swift in Sources */,
 				3193C8282C8E2ACB0018948F /* GPUImageEffect.swift in Sources */,
@@ -422,12 +432,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31A9AEA62CA699ED00C48BA4 /* CIFilterProcessor.swift in Sources */,
 				3193C8292C8E2C220018948F /* GPUImageEffect.swift in Sources */,
 				3193C8362C8F37180018948F /* GPUImageProcessor.swift in Sources */,
 				31AEFB4F2C9C66F800538B21 /* ImageExtensions.swift in Sources */,
 				3193C74A2C8AFC690018948F /* PhotoEditingPreview.swift in Sources */,
 				31D1D2242C94C2B10083732D /* MarkonEffect.swift in Sources */,
 				3193C7482C8AFC260018948F /* ProcessedImageView.swift in Sources */,
+				31A9AEA32CA698BD00C48BA4 /* CIFilterEffect.swift in Sources */,
 				31985CC62C64F74F00C3273C /* PhotoEditingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

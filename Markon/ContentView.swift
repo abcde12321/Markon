@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @StateObject var imageProcessor = GPUImageProcessor.shared
+    @StateObject var imageProcessor = CIFilterProcessor.shared
     
     @State private var isDraggingOver = false // Track when an image is being dragged over the area
     
