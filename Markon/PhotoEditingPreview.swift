@@ -72,7 +72,7 @@ struct PhotoEditingPreview: View {
     var effectsSelectionView: some View{
         // Horizontal scroll of different color effect
         ScrollView(.horizontal, showsIndicators: true) {
-            LazyHStack(spacing: 20) {
+            LazyHStack(spacing: 0) {
                 ForEach(imageProcessor.effectImages) { effectImage in
                     let isSelected = (effectImage.effect == imageProcessor.selectedEffect)
                     
