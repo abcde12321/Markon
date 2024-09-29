@@ -60,7 +60,7 @@ class ScratchyFilmFilter: CIFilter {
         let darkenVector = CIVector(x: 4, y: 0, z: 0, w: 0)
         let darkenBias = CIVector(x: 0, y: 1, z: 1, w: 1)
         let darkeningFilter = CIFilter.colorMatrix()
-        darkeningFilter.inputImage = noiseImage
+        darkeningFilter.inputImage = transformedNoise //noiseImage
         darkeningFilter.rVector = darkenVector
         darkeningFilter.gVector = zeroVector
         darkeningFilter.bVector = zeroVector

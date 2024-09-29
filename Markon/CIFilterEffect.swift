@@ -37,7 +37,7 @@ struct CIFilterEffect {
         dotScreen,
         hatchedScreen,
         lineScreen,
-        cannyEdgeDetector,
+        cannyEdgeDetector,//only available > ios17
         edges,
         edgeWork,
         gloom,
@@ -48,7 +48,6 @@ struct CIFilterEffect {
         xRay,
         scratchyFilm
     ]
-
 
     // MARK: - MarkonEffect Definitions
 
@@ -277,24 +276,6 @@ struct CIFilterEffect {
 //        }
 //    )
 
-//    //need a texture image
-//    static func generateGlassTextureImage(size: CGSize) -> CIImage? {
-//        // Use a Perlin noise-like texture
-//        
-//        // Create a random noise image
-//        let randomFilter = CIFilter.randomGenerator()
-//        let noiseImage = randomFilter.outputImage?
-//            .cropped(to: CGRect(origin: .zero, size: size))
-//        
-//        // Apply a Gaussian Blur to smooth out the noise
-//        let blurFilter = CIFilter.gaussianBlur()
-//        blurFilter.inputImage = noiseImage
-//        blurFilter.radius = 10.0 // Adjust for different textures
-//        let blurredNoise = blurFilter.outputImage?
-//            .cropped(to: CGRect(origin: .zero, size: size))
-//        
-//        return blurredNoise
-//    }
     
     static let glassDistortion = MarkonEffect(
         id: "CIFilter_GlassDistortion",
@@ -401,6 +382,7 @@ struct CIFilterEffect {
         }
     )
 
+    
     static let cannyEdgeDetector = MarkonEffect(
         id: "CIFilter_CannyEdgeDetector",
         name: "Canny Edge Detector",
@@ -421,6 +403,7 @@ struct CIFilterEffect {
             return filter
         }
     )
+    
 
     static let edges = MarkonEffect(
         id: "CIFilter_Edges",
