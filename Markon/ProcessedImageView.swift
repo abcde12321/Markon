@@ -48,7 +48,6 @@ struct ProcessedImageView: View {
                    loadingView
                }
            }
-           .frame(width: 250)
        }
 
     
@@ -61,7 +60,7 @@ struct ProcessedImageView: View {
         Image(systemName: "exclamationmark.triangle")
             .resizable()
             .aspectRatio(contentMode: .fit)
-            .frame(width: 200, height: 200)
+            .frame(width: width, height: height)
             .foregroundColor(.red)
     }
        
