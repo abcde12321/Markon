@@ -30,7 +30,7 @@ MarkOn is an iOS and macOS photo extension and helper app that includes a variet
 ## How to Use the MarkOn App
 
 1. The app does not request access to your photo library.
-2. You can **drag and drop** or **copy and paste** images into the app.
+2. You can **drag and drop** or **copy and paste** images into the app. It works on both iOS and macOS.
 
 <img src="ReadMEAssets/MarkOn_MacOSApp.png" alt="MarkOn macOS App" width="300" />
 <img src="ReadMEAssets/MarkOn_iPadApp.png" alt="MarkOn iPad App" width="300" />
@@ -90,6 +90,7 @@ static let sepia = MarkonEffect(
         return filter
     }
 )
+```
 
 ## Contributions
 
@@ -100,4 +101,4 @@ Contributions are welcome! I am especially interested in other custom CIFilters 
 
 This project is licensed under the [MIT License](LICENSE). 
 
-**Important:** If you use this code in your project, you must include a link back to this [GitHub repository](https://github.com/your-username/MarkOn).
+**Important:** If you use this code in your project, you must include a link back to this [GitHub repository](https://github.com/abcde12321/Markon/).
