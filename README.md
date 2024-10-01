@@ -24,7 +24,8 @@ MarkOn is an iOS and macOS photo extension and helper app that includes a variet
 3. Tap on the **Extensions** button.
 4. Select **MarkOn** to apply filters.
 
-<img src="ReadMEAssets/MarkOn_IphonePhotoExtension.gif" alt="MarkOn Photo Extension" width="400" />
+<!-- Github doesnot display gif in html  -->
+![MarkOn Photo Extension](ReadMEAssets/MarkOn_IPhonePhotoExtension.gif)
 
 ## How to Use the MarkOn App
 
