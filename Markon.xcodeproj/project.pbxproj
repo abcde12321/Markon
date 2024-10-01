@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		318DE6992CAAA96300246E5A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 318DE6982CAAA95500246E5A /* README.md */; };
-		318DE69A2CAAA96300246E5A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 318DE6982CAAA95500246E5A /* README.md */; };
-		318DE6A32CAC176C00246E5A /* License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 318DE6A22CAC176100246E5A /* License.txt */; };
-		318DE6A42CAC176C00246E5A /* License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 318DE6A22CAC176100246E5A /* License.txt */; };
 		3193C7462C8AFBF70018948F /* PhotoEditingPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31985CD32C654FD400C3273C /* PhotoEditingPreview.swift */; };
 		3193C7472C8AFC1C0018948F /* ProcessedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31544F9A2C73D2C5006FADF5 /* ProcessedImageView.swift */; };
 		3193C7482C8AFC260018948F /* ProcessedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31544F9A2C73D2C5006FADF5 /* ProcessedImageView.swift */; };
@@ -78,10 +74,10 @@
 
 /* Begin PBXFileReference section */
 		31544F9A2C73D2C5006FADF5 /* ProcessedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessedImageView.swift; sourceTree = "<group>"; };
-		318DE6982CAAA95500246E5A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		318DE69B2CAAF56700246E5A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		318DE69E2CAB0DF400246E5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		318DE6A22CAC176100246E5A /* License.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
+		318DE6A52CAC1FB500246E5A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		318DE6A62CAC1FC300246E5A /* License.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = License.txt; sourceTree = SOURCE_ROOT; };
 		31985C8C2C64B5E300C3273C /* Markon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Markon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31985C8F2C64B5E300C3273C /* MarkonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkonApp.swift; sourceTree = "<group>"; };
 		31985C912C64B5E300C3273C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -168,9 +164,7 @@
 		31985C8E2C64B5E300C3273C /* Markon */ = {
 			isa = PBXGroup;
 			children = (
-				318DE6A22CAC176100246E5A /* License.txt */,
 				318DE69E2CAB0DF400246E5A /* Info.plist */,
-				318DE6982CAAA95500246E5A /* README.md */,
 				31985C8F2C64B5E300C3273C /* MarkonApp.swift */,
 				31985C912C64B5E300C3273C /* ContentView.swift */,
 				31985CD32C654FD400C3273C /* PhotoEditingPreview.swift */,
@@ -185,6 +179,8 @@
 				31985C982C64B5E400C3273C /* Markon.entitlements */,
 				31985C952C64B5E400C3273C /* Preview Content */,
 				31985CD72C65FF7400C3273C /* FilterPlayground.playground */,
+				318DE6A52CAC1FB500246E5A /* README.md */,
+				318DE6A62CAC1FC300246E5A /* License.txt */,
 			);
 			path = Markon;
 			sourceTree = "<group>";
@@ -374,8 +370,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				318DE6A32CAC176C00246E5A /* License.txt in Resources */,
-				318DE69A2CAAA96300246E5A /* README.md in Resources */,
 				31985C972C64B5E400C3273C /* Preview Assets.xcassets in Resources */,
 				31985C942C64B5E400C3273C /* Assets.xcassets in Resources */,
 			);
@@ -399,8 +393,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				318DE6A42CAC176C00246E5A /* License.txt in Resources */,
-				318DE6992CAAA96300246E5A /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
