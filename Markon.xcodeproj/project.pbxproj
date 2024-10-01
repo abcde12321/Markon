@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		318DE6992CAAA96300246E5A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 318DE6982CAAA95500246E5A /* README.md */; };
+		318DE69A2CAAA96300246E5A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 318DE6982CAAA95500246E5A /* README.md */; };
+		318DE6A32CAC176C00246E5A /* License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 318DE6A22CAC176100246E5A /* License.txt */; };
+		318DE6A42CAC176C00246E5A /* License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 318DE6A22CAC176100246E5A /* License.txt */; };
 		3193C7462C8AFBF70018948F /* PhotoEditingPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31985CD32C654FD400C3273C /* PhotoEditingPreview.swift */; };
 		3193C7472C8AFC1C0018948F /* ProcessedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31544F9A2C73D2C5006FADF5 /* ProcessedImageView.swift */; };
 		3193C7482C8AFC260018948F /* ProcessedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31544F9A2C73D2C5006FADF5 /* ProcessedImageView.swift */; };
 		3193C74A2C8AFC690018948F /* PhotoEditingPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31985CD32C654FD400C3273C /* PhotoEditingPreview.swift */; };
-		3193C8312C8F08920018948F /* GPUImage in Frameworks */ = {isa = PBXBuildFile; productRef = 3193C8302C8F08920018948F /* GPUImage */; };
-		3193C8332C8F08A70018948F /* GPUImage in Frameworks */ = {isa = PBXBuildFile; productRef = 3193C8322C8F08A70018948F /* GPUImage */; };
 		31985C902C64B5E300C3273C /* MarkonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31985C8F2C64B5E300C3273C /* MarkonApp.swift */; };
 		31985C922C64B5E300C3273C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31985C912C64B5E300C3273C /* ContentView.swift */; };
 		31985C942C64B5E400C3273C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31985C932C64B5E400C3273C /* Assets.xcassets */; };
@@ -76,6 +78,10 @@
 
 /* Begin PBXFileReference section */
 		31544F9A2C73D2C5006FADF5 /* ProcessedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessedImageView.swift; sourceTree = "<group>"; };
+		318DE6982CAAA95500246E5A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		318DE69B2CAAF56700246E5A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		318DE69E2CAB0DF400246E5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		318DE6A22CAC176100246E5A /* License.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
 		31985C8C2C64B5E300C3273C /* Markon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Markon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31985C8F2C64B5E300C3273C /* MarkonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkonApp.swift; sourceTree = "<group>"; };
 		31985C912C64B5E300C3273C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -107,7 +113,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3193C8312C8F08920018948F /* GPUImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,7 +135,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				31985CC12C64F74F00C3273C /* PhotosUI.framework in Frameworks */,
-				3193C8332C8F08A70018948F /* GPUImage in Frameworks */,
 				31985CC32C64F74F00C3273C /* Photos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,6 +168,9 @@
 		31985C8E2C64B5E300C3273C /* Markon */ = {
 			isa = PBXGroup;
 			children = (
+				318DE6A22CAC176100246E5A /* License.txt */,
+				318DE69E2CAB0DF400246E5A /* Info.plist */,
+				318DE6982CAAA95500246E5A /* README.md */,
 				31985C8F2C64B5E300C3273C /* MarkonApp.swift */,
 				31985C912C64B5E300C3273C /* ContentView.swift */,
 				31985CD32C654FD400C3273C /* PhotoEditingPreview.swift */,
@@ -172,6 +179,7 @@
 				31A9AEA22CA698B500C48BA4 /* CIFilterEffect.swift */,
 				31A9AEA52CA699ED00C48BA4 /* CIFilterProcessor.swift */,
 				31AEFB4E2C9C66F400538B21 /* ImageExtensions.swift */,
+				318DE69B2CAAF56700246E5A /* LaunchScreen.storyboard */,
 				31A9AEA82CA715BF00C48BA4 /* CIFilter */,
 				31985C932C64B5E400C3273C /* Assets.xcassets */,
 				31985C982C64B5E400C3273C /* Markon.entitlements */,
@@ -252,7 +260,6 @@
 			);
 			name = Markon;
 			packageProductDependencies = (
-				3193C8302C8F08920018948F /* GPUImage */,
 			);
 			productName = Markon;
 			productReference = 31985C8C2C64B5E300C3273C /* Markon.app */;
@@ -308,7 +315,6 @@
 			);
 			name = MarkonExtension;
 			packageProductDependencies = (
-				3193C8322C8F08A70018948F /* GPUImage */,
 			);
 			productName = MarkonExtension;
 			productReference = 31985CBE2C64F74F00C3273C /* MarkonExtension.appex */;
@@ -350,7 +356,6 @@
 			);
 			mainGroup = 31985C832C64B5E300C3273C;
 			packageReferences = (
-				3193C82F2C8F08920018948F /* XCRemoteSwiftPackageReference "GPUImage3" */,
 			);
 			productRefGroup = 31985C8D2C64B5E300C3273C /* Products */;
 			projectDirPath = "";
@@ -369,6 +374,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				318DE6A32CAC176C00246E5A /* License.txt in Resources */,
+				318DE69A2CAAA96300246E5A /* README.md in Resources */,
 				31985C972C64B5E400C3273C /* Preview Assets.xcassets in Resources */,
 				31985C942C64B5E400C3273C /* Assets.xcassets in Resources */,
 			);
@@ -392,6 +399,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				318DE6A42CAC176C00246E5A /* License.txt in Resources */,
+				318DE6992CAAA96300246E5A /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,6 +528,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -576,6 +587,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -600,9 +613,15 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Markon/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MarkOn;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -614,7 +633,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -633,9 +652,15 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Markon/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MarkOn;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -647,7 +672,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -832,30 +857,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		3193C82F2C8F08920018948F /* XCRemoteSwiftPackageReference "GPUImage3" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/BradLarson/GPUImage3";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		3193C8302C8F08920018948F /* GPUImage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 3193C82F2C8F08920018948F /* XCRemoteSwiftPackageReference "GPUImage3" */;
-			productName = GPUImage;
-		};
-		3193C8322C8F08A70018948F /* GPUImage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 3193C82F2C8F08920018948F /* XCRemoteSwiftPackageReference "GPUImage3" */;
-			productName = GPUImage;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 31985C842C64B5E300C3273C /* Project object */;
 }
