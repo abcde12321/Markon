@@ -394,13 +394,17 @@ struct CIFilterEffect {
             // Optionally, you can include a toggle for "Perceptual" if your UI supports it
         ],
         cifilterProvider: { effect in
-            let filter = CIFilter.cannyEdgeDetector()
-            filter.gaussianSigma = effect.params[0]
-            filter.thresholdLow = effect.params[1]
-            filter.thresholdHigh = effect.params[2]
-            filter.hysteresisPasses = Int(effect.params[3])
-            filter.perceptual = false // Set to true if needed, or expose via UI
-            return filter
+            if #available(iOS 17, *) {
+                let filter = CIFilter.cannyEdgeDetector()
+                filter.gaussianSigma = effect.params[0]
+                filter.thresholdLow = effect.params[1]
+                filter.thresholdHigh = effect.params[2]
+                filter.hysteresisPasses = Int(effect.params[3])
+                filter.perceptual = false // Set to true if needed, or expose via UI
+                return filter
+            }else{
+                return nil
+            }
         }
     )
     

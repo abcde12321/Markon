@@ -43,6 +43,21 @@ extension Image {
 #endif
 
 
+extension PlatformImage {
+    /// Converts PlatformImage to JPEG Data
+    #if os(macOS)
+    func jpegData(compressionQuality: CGFloat = 1.0) -> Data? {
+        guard let tiffData = self.tiffRepresentation,
+              let bitmap = NSBitmapImageRep(data: tiffData) else {
+            return nil
+        }
+        return bitmap.representation(using: .jpeg, properties: [.compressionFactor: compressionQuality])
+    }
+    #endif
+}
+
+
+
 extension PlatformImage : @unchecked Sendable {}
 
 

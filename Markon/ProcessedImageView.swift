@@ -26,11 +26,6 @@ struct ProcessedImageView: View {
     let effectImage: EffectImage
     let isSelected: Bool
     
-    let width:CGFloat = 200
-    let height:CGFloat = 200
-
-    // @State private var processingState: ImageProcessingState = .loading
-
     var body: some View {
            VStack {
                Text(effectImage.effect.name)
@@ -39,28 +34,26 @@ struct ProcessedImageView: View {
                    Image(platformImage: image)
                        .resizable()
                        .aspectRatio(contentMode: .fit)
-                       .frame(width: width, height: height)
-                       .background(
-                           RoundedRectangle(cornerRadius: 0)
-                               .stroke(isSelected ? Color.green : Color.clear, lineWidth: 4)
-                       )
                }else{
                    loadingView
                }
            }
+           .background(
+               RoundedRectangle(cornerRadius: 0)
+                   .stroke(isSelected ? Color.green : Color.clear, lineWidth: 4)
+           )
        }
 
     
     var loadingView: some View{
         ProgressView("Processing...")
-            .frame(width: width, height: height)
+            //.frame(width: width, height: height)
     }
     
     var errorView: some View{ // Show when process error
         Image(systemName: "exclamationmark.triangle")
             .resizable()
             .aspectRatio(contentMode: .fit)
-            .frame(width: width, height: height)
             .foregroundColor(.red)
     }
        

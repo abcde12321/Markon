@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UniformTypeIdentifiers
 
 struct ContentView: View {
     
@@ -15,23 +16,36 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            // Drop area at the bottom
-            RoundedRectangle(cornerRadius: 10)
-                .stroke(isDraggingOver ? Color.green : Color.gray, lineWidth: 4)
-                .frame(width: 300, height: 200)
-                .overlay(
-                    Text("Drag & Drop Image Here")
-                        .font(.title2)
-                        .foregroundColor(.gray)
-                )
+            // Drop area that covers the entire window
+            Rectangle()
+                .fill(Color.clear)
                 .onDrop(of: ["public.image"], isTargeted: $isDraggingOver, perform: handleDrop)
-                .padding()
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
             
-            // Show the dropped image on top if it exists
-            if imageProcessor.originalImage != nil {
-                VStack {
-                    PhotoEditingPreview()
+            // Show drag and drop instructions only when no image is present
+            if imageProcessor.originalImage == nil {
+                VStack(spacing: 30) {
+                    Rectangle()
+                        .fill(Color.clear)
+                        .border(isDraggingOver ? Color.green : Color.gray, width: 4)
+                        .overlay(
+                            Text("Drag & Drop Image Here")
+                                .font(.title2)
+                                .foregroundColor(.gray)
+                        )
+                        .padding()
+                    
+                    // Button to read from the pasteboard
+                    Button(action: {
+                        readImageFromPasteboard()
+                    }) {
+                        Text("Paste Image")
+                    }
+                    .padding()
                 }
+            } else {
+                // Show the dropped image
+                PhotoEditingPreview()
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -76,6 +90,41 @@ struct ContentView: View {
             }
         }
         return false
+    }
+    
+    private func readImageFromPasteboard() {
+        #if os(iOS)
+        let pasteboard = UIPasteboard.general
+        
+        // Check if an image is available directly
+        if let image = pasteboard.image {
+            imageProcessor.originalImage = image
+        } else {
+            // Iterate over items in the pasteboard
+            for item in pasteboard.items {
+                if let data = item[UTType.image.identifier] as? Data,
+                   let image = UIImage(data: data) {
+                    imageProcessor.originalImage = image
+                    return
+                }
+            }
+            print("No image found in the pasteboard.")
+        }
+        #elseif os(macOS)
+        let pasteboard = NSPasteboard.general
+        
+        // Use UTType.image to get data for any image type
+        if let data = pasteboard.data(forType: NSPasteboard.PasteboardType(UTType.image.identifier)),
+           let image = NSImage(data: data) {
+            imageProcessor.originalImage = image
+        } else if let data = pasteboard.data(forType: .fileURL),
+                  let url = URL(dataRepresentation: data, relativeTo: nil),
+                  let image = NSImage(contentsOf: url) {
+            imageProcessor.originalImage = image
+        } else {
+            print("No image found in the pasteboard.")
+        }
+        #endif
     }
 }
 

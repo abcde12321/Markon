@@ -15,50 +15,57 @@ struct PhotoEditingPreview: View {
     @State private var shareItem: PlatformImage? = nil
     
     var body: some View {
-        VStack {
-            HStack{
-                if imageProcessor.selectedEffect != nil {
-                    processedImageView
-                }
-                
-                // Sliders for selected effect
-                let ow:CGFloat = (imageProcessor.selectedEffect == nil ? CGFloat.infinity : 300)
-                VStack {
-                    //if no select effect, show original image, when selected, make original image smaller
-                    if imageProcessor.originalImage != nil{
-                        originalImageView
+        GeometryReader { geometry in
+            let cHeight = geometry.size.height / 5
+            let cWidth = geometry.size.width / 4
+            
+            VStack {
+                HStack{
+                    if imageProcessor.selectedEffect != nil {
+                        processedImageView
                     }
                     
-                    // effect parameters adjustment sliders
-                    if let effect = imageProcessor.selectedEffect {
-                        ForEach(effect.sliders.indices, id: \.self) { index in
-                            let slider = effect.sliders[index]
-                            VStack {
-                                Text(slider.name)
-                                Slider(value: Binding(
-                                    get: { effect.sliders[index].value },
-                                    set: { newValue in
-                                        imageProcessor.selectedEffect?.sliders[index].value = newValue
-                                    }
-                                ),
-                                       in: slider.range,
-                                       step: slider.step
-                                )
-                            }
-                            //.background(.gray)
+                    // Sliders for selected effect
+                    let ow:CGFloat = (imageProcessor.selectedEffect == nil ? CGFloat.infinity : cWidth)
+                    VStack {
+                        //if no select effect, show original image, when selected, make original image smaller
+                        if imageProcessor.originalImage != nil{
+                            originalImageView
+                                .frame(height: cHeight)
                         }
-                        .frame(maxHeight: .infinity)
+                        
+                        // effect parameters adjustment sliders
+                        if let effect = imageProcessor.selectedEffect {
+                            ForEach(effect.sliders.indices, id: \.self) { index in
+                                let slider = effect.sliders[index]
+                                VStack {
+                                    Text(slider.name)
+                                    Slider(value: Binding(
+                                        get: { effect.sliders[index].value },
+                                        set: { newValue in
+                                            imageProcessor.selectedEffect?.sliders[index].value = newValue
+                                        }
+                                    ),
+                                           in: slider.range,
+                                           step: slider.step
+                                    )
+                                }
+                                //.background(.gray)
+                            }
+                            .frame(maxHeight: .infinity)
+                        }
                     }
+                    .frame(maxWidth: ow)
                 }
-                .frame(maxWidth: ow)
-            }
-            .frame(maxHeight: .infinity) // Ensure HStack takes full width
-            //.background(.green)
-            effectsSelectionView
+                .frame(maxHeight: .infinity) // Ensure HStack takes full width
+                //.background(.green)
+                effectsSelectionView
                 //.background(.blue)
-                .frame(height: 250)
+                    .frame(height: cHeight)
+            }
+            .frame(maxHeight: .infinity)
         }
-        .frame(maxHeight: .infinity)
+
     }
     
     var processedImageView: some View{
@@ -100,14 +107,13 @@ struct PhotoEditingPreview: View {
                 .buttonStyle(PlainButtonStyle()) // Ensures consistent appearance on both platforms
             }
         }
-        .frame(minHeight: 250)
         .padding()
     }
     
     var effectsSelectionView: some View{
         // Horizontal scroll of different color effect
         ScrollView(.horizontal, showsIndicators: true) {
-            LazyHStack(spacing: 0) {
+            LazyHStack(spacing: 10) {
                 ForEach(imageProcessor.effectImages) { effectImage in
                     let isSelected = (effectImage.effect == imageProcessor.selectedEffect)
                     
@@ -115,14 +121,12 @@ struct PhotoEditingPreview: View {
                         .onTapGesture {
                             imageProcessor.selectedEffect = effectImage.effect
                         }
-
                 }
             }
             .frame(maxWidth: .infinity)  // Ensure HStack takes the entire available width
         }
     }
 }
-
 
 
 //extension PhotoEditingPreview{
