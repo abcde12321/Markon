@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		317DE28A2CB1D42C0040A0EA /* CustomBodyPixellateFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317DE2892CB1D42C0040A0EA /* CustomBodyPixellateFilter.swift */; };
+		317DE28B2CB1D42C0040A0EA /* CustomBodyPixellateFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317DE2892CB1D42C0040A0EA /* CustomBodyPixellateFilter.swift */; };
 		3193C7462C8AFBF70018948F /* PhotoEditingPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31985CD32C654FD400C3273C /* PhotoEditingPreview.swift */; };
 		3193C7472C8AFC1C0018948F /* ProcessedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31544F9A2C73D2C5006FADF5 /* ProcessedImageView.swift */; };
 		3193C7482C8AFC260018948F /* ProcessedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31544F9A2C73D2C5006FADF5 /* ProcessedImageView.swift */; };
@@ -22,6 +24,14 @@
 		31985CC32C64F74F00C3273C /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31985CC22C64F74F00C3273C /* Photos.framework */; };
 		31985CC62C64F74F00C3273C /* PhotoEditingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31985CC52C64F74F00C3273C /* PhotoEditingViewController.swift */; };
 		31985CCE2C64F74F00C3273C /* MarkonExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 31985CBE2C64F74F00C3273C /* MarkonExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		319EC8C72CAEAB0000E0BA15 /* CustomML_pencilFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319EC8C62CAEAAF500E0BA15 /* CustomML_pencilFilter.swift */; };
+		319EC8C82CAEAB0000E0BA15 /* CustomML_pencilFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319EC8C62CAEAAF500E0BA15 /* CustomML_pencilFilter.swift */; };
+		319EC8CC2CAEC14500E0BA15 /* CustomML_pencil.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 319EC8CB2CAEC14500E0BA15 /* CustomML_pencil.mlpackage */; };
+		319EC8CD2CAEC14500E0BA15 /* CustomML_pencil.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 319EC8CB2CAEC14500E0BA15 /* CustomML_pencil.mlpackage */; };
+		319EC8CF2CAEC15B00E0BA15 /* CustomML_waterpaint.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 319EC8CE2CAEC15B00E0BA15 /* CustomML_waterpaint.mlpackage */; };
+		319EC8D02CAEC15B00E0BA15 /* CustomML_waterpaint.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 319EC8CE2CAEC15B00E0BA15 /* CustomML_waterpaint.mlpackage */; };
+		319EC8D22CAF2A7B00E0BA15 /* CustomML_waterpaintFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319EC8D12CAF2A6B00E0BA15 /* CustomML_waterpaintFilter.swift */; };
+		319EC8D32CAF2A7B00E0BA15 /* CustomML_waterpaintFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319EC8D12CAF2A6B00E0BA15 /* CustomML_waterpaintFilter.swift */; };
 		31A9AEA32CA698BD00C48BA4 /* CIFilterEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A9AEA22CA698B500C48BA4 /* CIFilterEffect.swift */; };
 		31A9AEA42CA698BD00C48BA4 /* CIFilterEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A9AEA22CA698B500C48BA4 /* CIFilterEffect.swift */; };
 		31A9AEA62CA699ED00C48BA4 /* CIFilterProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A9AEA52CA699ED00C48BA4 /* CIFilterProcessor.swift */; };
@@ -32,6 +42,8 @@
 		31AEFB502C9C66F800538B21 /* ImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AEFB4E2C9C66F400538B21 /* ImageExtensions.swift */; };
 		31D1D2232C94C28D0083732D /* MarkonEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D1D2222C94C28D0083732D /* MarkonEffect.swift */; };
 		31D1D2242C94C2B10083732D /* MarkonEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D1D2222C94C28D0083732D /* MarkonEffect.swift */; };
+		31D5458E2CAFF36800F92076 /* CustomFacePixellateFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D5458D2CAFF36800F92076 /* CustomFacePixellateFilter.swift */; };
+		31D5458F2CAFF36800F92076 /* CustomFacePixellateFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D5458D2CAFF36800F92076 /* CustomFacePixellateFilter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +86,7 @@
 
 /* Begin PBXFileReference section */
 		31544F9A2C73D2C5006FADF5 /* ProcessedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessedImageView.swift; sourceTree = "<group>"; };
+		317DE2892CB1D42C0040A0EA /* CustomBodyPixellateFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBodyPixellateFilter.swift; sourceTree = "<group>"; };
 		318DE69B2CAAF56700246E5A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		318DE69E2CAB0DF400246E5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		318DE6A52CAC1FB500246E5A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
@@ -97,11 +110,16 @@
 		31985CCB2C64F74F00C3273C /* MarkonExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MarkonExtension.entitlements; sourceTree = "<group>"; };
 		31985CD32C654FD400C3273C /* PhotoEditingPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEditingPreview.swift; sourceTree = "<group>"; };
 		31985CD72C65FF7400C3273C /* FilterPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FilterPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		319EC8C62CAEAAF500E0BA15 /* CustomML_pencilFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomML_pencilFilter.swift; sourceTree = "<group>"; };
+		319EC8CB2CAEC14500E0BA15 /* CustomML_pencil.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = CustomML_pencil.mlpackage; sourceTree = "<group>"; };
+		319EC8CE2CAEC15B00E0BA15 /* CustomML_waterpaint.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = CustomML_waterpaint.mlpackage; sourceTree = "<group>"; };
+		319EC8D12CAF2A6B00E0BA15 /* CustomML_waterpaintFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomML_waterpaintFilter.swift; sourceTree = "<group>"; };
 		31A9AEA22CA698B500C48BA4 /* CIFilterEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIFilterEffect.swift; sourceTree = "<group>"; };
 		31A9AEA52CA699ED00C48BA4 /* CIFilterProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIFilterProcessor.swift; sourceTree = "<group>"; };
 		31A9AEA92CA7160600C48BA4 /* ScratchyFilmFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchyFilmFilter.swift; sourceTree = "<group>"; };
 		31AEFB4E2C9C66F400538B21 /* ImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtensions.swift; sourceTree = "<group>"; };
 		31D1D2222C94C28D0083732D /* MarkonEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkonEffect.swift; sourceTree = "<group>"; };
+		31D5458D2CAFF36800F92076 /* CustomFacePixellateFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFacePixellateFilter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,7 +192,7 @@
 				31A9AEA52CA699ED00C48BA4 /* CIFilterProcessor.swift */,
 				31AEFB4E2C9C66F400538B21 /* ImageExtensions.swift */,
 				318DE69B2CAAF56700246E5A /* LaunchScreen.storyboard */,
-				31A9AEA82CA715BF00C48BA4 /* CIFilter */,
+				31A9AEA82CA715BF00C48BA4 /* CustomFilter */,
 				31985C932C64B5E400C3273C /* Assets.xcassets */,
 				31985C982C64B5E400C3273C /* Markon.entitlements */,
 				31985C952C64B5E400C3273C /* Preview Content */,
@@ -229,12 +247,18 @@
 			path = MarkonExtension;
 			sourceTree = "<group>";
 		};
-		31A9AEA82CA715BF00C48BA4 /* CIFilter */ = {
+		31A9AEA82CA715BF00C48BA4 /* CustomFilter */ = {
 			isa = PBXGroup;
 			children = (
+				317DE2892CB1D42C0040A0EA /* CustomBodyPixellateFilter.swift */,
+				31D5458D2CAFF36800F92076 /* CustomFacePixellateFilter.swift */,
 				31A9AEA92CA7160600C48BA4 /* ScratchyFilmFilter.swift */,
+				319EC8CE2CAEC15B00E0BA15 /* CustomML_waterpaint.mlpackage */,
+				319EC8D12CAF2A6B00E0BA15 /* CustomML_waterpaintFilter.swift */,
+				319EC8CB2CAEC14500E0BA15 /* CustomML_pencil.mlpackage */,
+				319EC8C62CAEAAF500E0BA15 /* CustomML_pencilFilter.swift */,
 			);
-			path = CIFilter;
+			path = CustomFilter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -404,13 +428,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				31985C922C64B5E300C3273C /* ContentView.swift in Sources */,
+				319EC8CC2CAEC14500E0BA15 /* CustomML_pencil.mlpackage in Sources */,
+				319EC8CF2CAEC15B00E0BA15 /* CustomML_waterpaint.mlpackage in Sources */,
 				31D1D2232C94C28D0083732D /* MarkonEffect.swift in Sources */,
+				319EC8C72CAEAB0000E0BA15 /* CustomML_pencilFilter.swift in Sources */,
 				31A9AEA42CA698BD00C48BA4 /* CIFilterEffect.swift in Sources */,
 				31A9AEA72CA699ED00C48BA4 /* CIFilterProcessor.swift in Sources */,
 				31AEFB502C9C66F800538B21 /* ImageExtensions.swift in Sources */,
 				3193C7472C8AFC1C0018948F /* ProcessedImageView.swift in Sources */,
 				31A9AEAA2CA7160600C48BA4 /* ScratchyFilmFilter.swift in Sources */,
+				317DE28A2CB1D42C0040A0EA /* CustomBodyPixellateFilter.swift in Sources */,
 				3193C7462C8AFBF70018948F /* PhotoEditingPreview.swift in Sources */,
+				319EC8D22CAF2A7B00E0BA15 /* CustomML_waterpaintFilter.swift in Sources */,
+				31D5458E2CAFF36800F92076 /* CustomFacePixellateFilter.swift in Sources */,
 				31985C902C64B5E300C3273C /* MarkonApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,11 +468,17 @@
 			files = (
 				31A9AEA62CA699ED00C48BA4 /* CIFilterProcessor.swift in Sources */,
 				31AEFB4F2C9C66F800538B21 /* ImageExtensions.swift in Sources */,
+				319EC8D02CAEC15B00E0BA15 /* CustomML_waterpaint.mlpackage in Sources */,
 				31A9AEAB2CA7160600C48BA4 /* ScratchyFilmFilter.swift in Sources */,
+				31D5458F2CAFF36800F92076 /* CustomFacePixellateFilter.swift in Sources */,
 				3193C74A2C8AFC690018948F /* PhotoEditingPreview.swift in Sources */,
+				319EC8CD2CAEC14500E0BA15 /* CustomML_pencil.mlpackage in Sources */,
+				317DE28B2CB1D42C0040A0EA /* CustomBodyPixellateFilter.swift in Sources */,
+				319EC8D32CAF2A7B00E0BA15 /* CustomML_waterpaintFilter.swift in Sources */,
 				31D1D2242C94C2B10083732D /* MarkonEffect.swift in Sources */,
 				3193C7482C8AFC260018948F /* ProcessedImageView.swift in Sources */,
 				31A9AEA32CA698BD00C48BA4 /* CIFilterEffect.swift in Sources */,
+				319EC8C82CAEAB0000E0BA15 /* CustomML_pencilFilter.swift in Sources */,
 				31985CC62C64F74F00C3273C /* PhotoEditingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

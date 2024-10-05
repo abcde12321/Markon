@@ -1,0 +1,14 @@
+{
+  "MLModelDescriptionKey" : "pencil style",
+  "MLModelCreatorDefinedKey" : {
+    "Algorithm" : "cnn",
+    "com.apple.coreml.model.preview.type" : "styleTransfer",
+    "com.apple.createml.version" : "15.0.0",
+    "com.apple.coreml.model.preview.params" : "image",
+    "Textel Density" : "256",
+    "com.apple.createml.app.tag" : "150",
+    "com.apple.createml.app.version" : "6.0 Beta",
+    "Style Strength" : "5"
+  },
+  "MLModelAuthorKey" : "Fan Yang"
+}

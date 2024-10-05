@@ -1,13 +1,18 @@
 
-# MarkOn
+MarkOn is on [Test Flight public test](https://testflight.apple.com/join/R9qnqvpZ).
 
-MarkOn is an iOS and macOS photo extension and helper app that includes a variety of interesting Core Image filters.
+# MarkOn (Photos extension for iOS and macOS)
+
+MarkOn is an iOS and macOS Photos extension and helper app written in swift that includes a variety of interesting Core Image filters (CIFilter).
+
+It has been test on iOS 18 and macOS 15.0.
 
 ## Features
 
 - **Privacy-Focused**: MarkOn prioritizes your privacy. Perform all edits within the Photos app without leaving it, making it perfect for handling private photos.
 - **Comprehensive CIFilters**: A wide range of Core Image filters included.
 - **Seamless Integration**: Easily integrates as a photo extension for quick edits.
+
 
 ## How to Build This Project
 
@@ -23,6 +28,7 @@ MarkOn is an iOS and macOS photo extension and helper app that includes a variet
 2. Select a photo and choose **Edit**.
 3. Tap on the **Extensions** button.
 4. Select **MarkOn** to apply filters.
+5. The original photo is always kept, you just need to tap "revert back to orginal" on the edit field to remove the filtered changes.
 
 <!-- Github doesnot display gif in html  -->
 ![MarkOn Photo Extension](ReadMEAssets/MarkOn_IPhonePhotoExtension.gif)
@@ -69,7 +75,7 @@ MarkOn includes the following Core Image filters:
 - **CILineOverlay**
 - **CISobelGradients**
 - **CIXRay**
-- **CIScratchyFilm**
+- **CIScratchyFilm** (https://developer.apple.com/documentation/coreimage/simulating_scratchy_analog_film#2953507)
 
 You can easily add more filters in `CIFilterEffect.swift`.
 
@@ -94,11 +100,18 @@ static let sepia = MarkonEffect(
 
 ## Contributions
 
-Contributions are welcome! I am especially interested in other custom CIFilters and Core ML model filters that use Core ML models. Let me know if you have any suggestions. Enjoy!
+Contributions are welcome! I am especially interested in other custom CIFilters and coreMLModelFilter that use Core ML models. Let me know if you have any suggestions. Enjoy!
 
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE). 
+This project is licensed under the [MIT License](License.txt). 
 
 **Important:** If you use this code in your project, you must include a link back to this [GitHub repository](https://github.com/abcde12321/Markon/).
+
+
+## Resources
+
+[Creating Photo Editing Extensions](https://developer.apple.com/documentation/photokit/creating_photo_editing_extensions/)
+[Build Image and Video Style Transfer models in Create ML](https://developer.apple.com/videos/play/wwdc2020/10642/)
+

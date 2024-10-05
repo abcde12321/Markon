@@ -12,6 +12,7 @@ import CoreImage.CIFilterBuiltins
 struct CIFilterEffect {
     // List of CIFilter-based MarkonEffects
     static let CIFilterEffects: [MarkonEffect] = [
+
         sepia,
         bloom,
         comicEffect,
@@ -46,7 +47,13 @@ struct CIFilterEffect {
         lineOverlay,
         sobelGradients,
         xRay,
-        scratchyFilm
+        scratchyFilm,
+        customML_pencil,
+        customML_waterpaint,
+        
+        customFacePixellate,
+        customBodyPixellate,
+        
     ]
 
     // MARK: - MarkonEffect Definitions
@@ -521,6 +528,54 @@ struct CIFilterEffect {
         ],
         cifilterProvider: { effect in
             return ScratchyFilmFilter()
+        }
+    )
+    
+    static let customML_pencil = MarkonEffect(
+        id: "CustomML_pencil",
+        name: "Pencil",
+        sliders: [
+            //SliderInfo(name: "Grain Blur Radius", range: 0.0...10.0, step: 0.5, value: 2.0),
+        ],
+        cifilterProvider: { effect in
+            return CustomML_pencilFilter()
+        }
+    )
+    
+    static let customML_waterpaint = MarkonEffect(
+        id: "CustomML_waterpaint",
+        name: "Waterpaint",
+        sliders: [
+            //SliderInfo(name: "Grain Blur Radius", range: 0.0...10.0, step: 0.5, value: 2.0),
+        ],
+        cifilterProvider: { effect in
+            return CustomML_waterpaintFilter()
+        }
+    )
+    
+    static let customFacePixellate = MarkonEffect(
+        id: "custom_FacePixellate",
+        name: "Face Pixellate",
+        sliders: [
+            SliderInfo(name: "Intensity", range: 5.0...100.0, step: 5, value: 10.0),
+        ],
+        cifilterProvider: { effect in
+            let filter = CustomFacePixellateFilter()
+            filter.setValue(effect.params[0], forKey: "intensity")
+            return filter
+        }
+    )
+    
+    static let customBodyPixellate = MarkonEffect(
+        id: "custom_BodyPixellate",
+        name: "Human Pixellate",
+        sliders: [
+            SliderInfo(name: "Intensity", range: 5.0...100.0, step: 5, value: 10.0),
+        ],
+        cifilterProvider: { effect in
+            let filter = CustomBodyPixellateFilter()
+            filter.setValue(effect.params[0], forKey: "intensity")
+            return filter
         }
     )
 }
