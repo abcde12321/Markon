@@ -12,6 +12,11 @@ struct MarkonApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .onOpenURL { url in
+                    let processor = CIFilterProcessor.shared
+                    //image from the url
+                    processor.originalImage = PlatformImage(contentsOf: url)
+                }
         }
     }
 }

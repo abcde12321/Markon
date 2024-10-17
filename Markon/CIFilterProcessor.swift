@@ -45,8 +45,13 @@ class CIFilterProcessor: ObservableObject {
                 processedImage = nil
                 return
             }
-
+            
             ciInputImage = CIImage(platformImage:image)
+            
+            if selectedEffect == nil{
+                selectedEffect = CIFilterEffect.sepia
+            }
+            
             Task {
                 await processAllEffectsLight()
             }

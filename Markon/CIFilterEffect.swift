@@ -53,7 +53,7 @@ struct CIFilterEffect {
         
         customFacePixellate,
         customBodyPixellate,
-        
+        customBackgroundPixellate
     ]
 
     // MARK: - MarkonEffect Definitions
@@ -574,6 +574,19 @@ struct CIFilterEffect {
         ],
         cifilterProvider: { effect in
             let filter = CustomBodyPixellateFilter()
+            filter.setValue(effect.params[0], forKey: "intensity")
+            return filter
+        }
+    )
+    
+    static let customBackgroundPixellate = MarkonEffect(
+        id: "custom_BackgroundPixellate",
+        name: "Background Pixellate",
+        sliders: [
+            SliderInfo(name: "Intensity", range: 5.0...100.0, step: 5, value: 10.0),
+        ],
+        cifilterProvider: { effect in
+            let filter = CustomBackgroundPixellateFilter()
             filter.setValue(effect.params[0], forKey: "intensity")
             return filter
         }

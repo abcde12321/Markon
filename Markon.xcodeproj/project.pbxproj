@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		317DE28A2CB1D42C0040A0EA /* CustomBodyPixellateFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317DE2892CB1D42C0040A0EA /* CustomBodyPixellateFilter.swift */; };
 		317DE28B2CB1D42C0040A0EA /* CustomBodyPixellateFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317DE2892CB1D42C0040A0EA /* CustomBodyPixellateFilter.swift */; };
+		317DE28D2CB1DA840040A0EA /* CustomBackgroundPixellateFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317DE28C2CB1DA840040A0EA /* CustomBackgroundPixellateFilter.swift */; };
+		317DE28E2CB1DA840040A0EA /* CustomBackgroundPixellateFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317DE28C2CB1DA840040A0EA /* CustomBackgroundPixellateFilter.swift */; };
 		3193C7462C8AFBF70018948F /* PhotoEditingPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31985CD32C654FD400C3273C /* PhotoEditingPreview.swift */; };
 		3193C7472C8AFC1C0018948F /* ProcessedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31544F9A2C73D2C5006FADF5 /* ProcessedImageView.swift */; };
 		3193C7482C8AFC260018948F /* ProcessedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31544F9A2C73D2C5006FADF5 /* ProcessedImageView.swift */; };
@@ -87,6 +89,7 @@
 /* Begin PBXFileReference section */
 		31544F9A2C73D2C5006FADF5 /* ProcessedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessedImageView.swift; sourceTree = "<group>"; };
 		317DE2892CB1D42C0040A0EA /* CustomBodyPixellateFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBodyPixellateFilter.swift; sourceTree = "<group>"; };
+		317DE28C2CB1DA840040A0EA /* CustomBackgroundPixellateFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackgroundPixellateFilter.swift; sourceTree = "<group>"; };
 		318DE69B2CAAF56700246E5A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		318DE69E2CAB0DF400246E5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		318DE6A52CAC1FB500246E5A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
@@ -250,6 +253,7 @@
 		31A9AEA82CA715BF00C48BA4 /* CustomFilter */ = {
 			isa = PBXGroup;
 			children = (
+				317DE28C2CB1DA840040A0EA /* CustomBackgroundPixellateFilter.swift */,
 				317DE2892CB1D42C0040A0EA /* CustomBodyPixellateFilter.swift */,
 				31D5458D2CAFF36800F92076 /* CustomFacePixellateFilter.swift */,
 				31A9AEA92CA7160600C48BA4 /* ScratchyFilmFilter.swift */,
@@ -436,6 +440,7 @@
 				31A9AEA72CA699ED00C48BA4 /* CIFilterProcessor.swift in Sources */,
 				31AEFB502C9C66F800538B21 /* ImageExtensions.swift in Sources */,
 				3193C7472C8AFC1C0018948F /* ProcessedImageView.swift in Sources */,
+				317DE28E2CB1DA840040A0EA /* CustomBackgroundPixellateFilter.swift in Sources */,
 				31A9AEAA2CA7160600C48BA4 /* ScratchyFilmFilter.swift in Sources */,
 				317DE28A2CB1D42C0040A0EA /* CustomBodyPixellateFilter.swift in Sources */,
 				3193C7462C8AFBF70018948F /* PhotoEditingPreview.swift in Sources */,
@@ -467,6 +472,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				31A9AEA62CA699ED00C48BA4 /* CIFilterProcessor.swift in Sources */,
+				317DE28D2CB1DA840040A0EA /* CustomBackgroundPixellateFilter.swift in Sources */,
 				31AEFB4F2C9C66F800538B21 /* ImageExtensions.swift in Sources */,
 				319EC8D02CAEC15B00E0BA15 /* CustomML_waterpaint.mlpackage in Sources */,
 				31A9AEAB2CA7160600C48BA4 /* ScratchyFilmFilter.swift in Sources */,

@@ -77,6 +77,8 @@ MarkOn includes the following Core Image filters:
 - **CIXRay**
 - **CIScratchyFilm** (https://developer.apple.com/documentation/coreimage/simulating_scratchy_analog_film#2953507)
 
+
+
 You can easily add more filters in `CIFilterEffect.swift`.
 
 ## Code Example
@@ -112,6 +114,6 @@ This project is licensed under the [MIT License](License.txt).
 
 ## Resources
 
-[Creating Photo Editing Extensions](https://developer.apple.com/documentation/photokit/creating_photo_editing_extensions/)
-[Build Image and Video Style Transfer models in Create ML](https://developer.apple.com/videos/play/wwdc2020/10642/)
+[Creating Photo Editing Extensions](https://developer.apple.com/documentation/photokit/creating_photo_editing_extensions/).
+[Build Image and Video Style Transfer models in Create ML](https://developer.apple.com/videos/play/wwdc2020/10642/).
 
